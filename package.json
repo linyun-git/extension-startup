@@ -1,0 +1,26 @@
+{
+  "name": "extension-startup",
+  "version": "1.0.0",
+  "description": "chrome extension 脚手架",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "chrome-extension"
+  ],
+  "author": "linyun-git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chrome": "^0.0.190",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.3.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+  }
+}

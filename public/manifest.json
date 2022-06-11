@@ -1,0 +1,24 @@
+{
+  "name": "extension-startup",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "sandbox": {
+    "pages": ["sandbox.html"]
+  },
+  "devtools_page": "devtools.html",
+  "action": {
+    "default_title": "Extension Startup",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": true,
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}
